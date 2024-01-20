@@ -19,6 +19,7 @@ html{
 
 body{
   overflow-x: hidden;
+  background-color: #e9e2e2;
 }
 
 .heading{
@@ -39,7 +40,7 @@ body{
   align-items: center;
   justify-content: space-between;
   width:100%;
-  background:#fff;
+  background:rgba(0, 0,0, 0.6);
   z-index: 100;
   padding:1rem 2rem;
   box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
@@ -63,17 +64,17 @@ body{
 
 .header nav ul li a{
   font-size: 2rem;
-  color:#666;
+  color:#fff;
 }
 
 .header nav ul li a:hover{
-  color:#000;
+  color: var(--orange);
   text-decoration: none;
 }
 
 .header .fa-bars{
   font-size: 2.5rem;
-  color:#666;
+  color:#fff;
   cursor: pointer;
   display: none;
 }
@@ -81,9 +82,10 @@ body{
 
 .home .hero{
   min-height: 60vh;
-  background: url(../images/bg-image.jpeg) no-repeat;
+  background: url(../images/bg5.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
 }
@@ -112,7 +114,7 @@ body{
   color:#fff;
 }
 
-
+/* Counting */
 .home .counting{
   min-height: 40vh;
   padding:2rem 0;
@@ -419,16 +421,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .fa-times{
   transform: rotate(180deg);
 }
@@ -458,7 +450,7 @@ body{
   .header nav ul{
     height: 100%;
     width:33rem;
-    background:#fff;
+    background:#d3cfcf;
     flex-flow: column;
     justify-content: center;
     float: right;
@@ -475,6 +467,7 @@ body{
     width:25rem;
     border-radius: 5rem;
     text-align: center;
+    color: #000;
   }
 
   .header nav ul li a:hover{
